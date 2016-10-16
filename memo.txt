@@ -11,6 +11,8 @@
     - [0-9]       = 0~9
     - [a-zA-Z0-9] = ぜんぶ
     - [^a-z]      = a~z以外ぜんぶ
+    - ^abc        = 文字列の最初のa
+    - xyz$        = 文字列の最後のz
 
   ----------------
 
@@ -45,7 +47,15 @@
     - echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
       - [-r] 拡張正規表現
 
+    - echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
+      - [-r] 拡張正規表現
 
+    - echo -e 'abc\nabcdef\nabcdefabc' | sed -r '/def$/d'
+      - ['/パターン/d'] パターンにマッチする行を削除
+
+    - echo -e 'abc\nabcdef\nabcdefabc' | sed -r '/def$/!d'
+      - ['/パターン/!d'] パターンにマッチする行!!以外!!を削除
+        - grepとして使える！
 
   ----------------
 
