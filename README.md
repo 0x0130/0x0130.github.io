@@ -43,23 +43,23 @@
 
     echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/'
 
-- ['s/a/A/'] 1行につき最初の1回の出現のみ置換
+*['s/a/A/'] 1行につき最初の1回の出現のみ置換
 
     echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/g'
 
-['s/a/A/g'] 出てくる分だけ全部置換
+*['s/a/A/g'] 出てくる分だけ全部置換
 
     echo -e 'abc\nabcdef\nabcdefabc' | sed -e 's/abc/ABC/g' -e 's/def/DEF/g'
 
-[-e] 複数条件
+*[-e] 複数条件
 
     echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
 
-[-r] 拡張正規表現
+*[-r] 拡張正規表現
 
     echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
 
-[-r] 拡張正規表現
+*[-r] 拡張正規表現
 
     echo -e 'abc\nabcdef\nabcdefabc' | sed -r '/def$/d'
 
