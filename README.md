@@ -11,8 +11,8 @@
 |`[0-9]`|0~9の中の任意の一文字||
 |`[a-zA-Z0-9]`|`[]`の中身ぜんぶ||
 |`[^a-z]`|`[]`の中身以外ぜんぶ||
-|`^abc`|文字列の最初のabc|`abcdefg...` ... OK `aabcdefg...` ... NG |
-|`xyz$`|文字列の最後のxyz||
+|`^abc`|文字列の最初のabc|`abcdefg...` ... OK `aabcdefg...` ... NG|
+|`xyz$`|文字列の最後のxyz|`...vwxyz` ... OK `...vwxyzz` ... NG|
 
 
 
