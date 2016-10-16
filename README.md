@@ -40,35 +40,13 @@
 ## sed
 |code|説明|備考|
 |:--|:--|:--|
-
-    echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/'
-
-*['s/a/A/'] 1行につき最初の1回の出現のみ置換
-
-    echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/g'
-
-*['s/a/A/g'] 出てくる分だけ全部置換
-
-    echo -e 'abc\nabcdef\nabcdefabc' | sed -e 's/abc/ABC/g' -e 's/def/DEF/g'
-
-*[-e] 複数条件
-
-    echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
-
-*[-r] 拡張正規表現
-
-    echo -e 'abc\nabcdef\nabcdefabc' | sed -r 's/[a-z]+f/FFF/g'
-
-*[-r] 拡張正規表現
-
-    echo -e 'abc\nabcdef\nabcdefabc' | sed -r '/def$/d'
-
-['/パターン/d'] パターンにマッチする行を削除
-
-    echo -e 'abc\nabcdef\nabcdefabc' | sed -r '/def$/!d'
-
-['/パターン/!d'] パターンにマッチする行!!以外!!を削除。
-grepとして使える！
+|`sed 's/abc/ABC/' $file`|`'s/a/A/'` ... 1行につき最初の1回の出現のみ置換||
+|`sed 's/abc/ABC/g' $file`|`'s/a/A/g'` ... 出てくる分だけ全部置換||
+|`sed -e 's/abc/ABC/g' -e 's/def/DEF/g' $file`|`-e`複数条件||
+|`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
+|`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
+|`sed -r '/def$/d' $file`|`'/パターン/d'` パターンにマッチする行を削除||
+|`sed -r '/def$/!d' $file`|`'/パターン/!d'` パターンにマッチする行!!以外!!を削除。|grepとして使える！|
 
 
 
