@@ -43,7 +43,7 @@
 
     echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/'
 
-['s/a/A/'] 1行につき最初の1回の出現のみ置換
+- ['s/a/A/'] 1行につき最初の1回の出現のみ置換
 
     echo -e 'abc\nabcabc\nabcabcabc' | sed 's/abc/ABC/g'
 
