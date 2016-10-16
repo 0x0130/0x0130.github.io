@@ -40,8 +40,8 @@
 ## sed
 |code|説明|備考|
 |:--|:--|:--|
-|`sed 's/abc/ABC/'` $file|`'s/a/A/'` ... 1行につき最初の1回の出現のみ置換||
-|`sed 's/abc/ABC/g'` $file|`'s/a/A/g'` ... 出てくる分だけ全部置換||
+|`sed 's/abc/ABC/' $file`|`'s/a/A/'` ... 1行につき最初の1回の出現のみ置換||
+|`sed 's/abc/ABC/g' $file`|`'s/a/A/g'` ... 出てくる分だけ全部置換||
 |`sed -e 's/abc/ABC/g' -e 's/def/DEF/g' $file`|`-e`複数条件||
 |`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
 |`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
