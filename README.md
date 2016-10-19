@@ -1,5 +1,10 @@
 # 備忘録
 
+## Apache2.2.x on RHEL7
+[Apache2.4 on CentOS7 でsystemctl start httpdで起動しない問題の対処法](http://qiita.com/DQNEO/items/7284687e22e3f9483984)
+[Apache2.2の設定ファイルをApache2.4に移植するためにやったことまとめ](http://qiita.com/DQNEO/items/1556a8e85af4bc40aad6)
+[Apache 2.4.4 - undefined symbol: ap_log_rerror](http://apache-http-server.18135.x6.nabble.com/Apache-2-4-4-undefined-symbol-ap-log-rerror-td5004721.html)
+
 ## 学習事項
 * 統合認証基盤
 * OpenLDAP
