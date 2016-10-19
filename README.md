@@ -3,7 +3,7 @@
 ## 学習事項
 * 統合認証基盤
 * OpenLDAP
-* systemctlとUnitファイル
+* [systemctlとUnitファイル](http://qiita.com/DQNEO/items/0b5d0bc5d3cf407cb7ff)
 
 ## 正規表現(拡張正規表現)
 |code|説明|備考|
