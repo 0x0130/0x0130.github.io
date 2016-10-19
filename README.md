@@ -42,6 +42,13 @@
 
 
 
+## 環境変数
+|code|説明|備考|
+|:--|:--|:--|
+|`HISTTIMEFORMAT='%Y-%m-%dT%T%z '`|history にコマンド実行時刻を記録する||
+
+
+
 ## sed
 |code|説明|備考|
 |:--|:--|:--|
@@ -52,7 +59,6 @@
 |`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
 |`sed -r '/def$/d' $file`|`'/pattern/d'` マッチする行を削除||
 |`sed -r '/def$/!d' $file`|`'/pattern/!d'` マッチする行以外を削除|grepとして使える！|
-
 
 
 
