@@ -3,6 +3,7 @@
 ## 学習事項
 * 統合認証基盤
 * OpenLDAP
+* systemctlとUnitファイル
 
 ## 正規表現(拡張正規表現)
 |code|説明|備考|
