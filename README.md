@@ -10,14 +10,14 @@
 ## いいかんじのオプション
 |code|説明|備考|
 |:--|:--|:--|
-|`grep --color=always`|grepのマッチング色付き表示がいいかんじなる||
+|`grep --color=always`|`grep`のマッチング色付き表示がいいかんじなる||
 
 
 
 ## 環境変数
 |code|説明|備考|
 |:--|:--|:--|
-|`HISTTIMEFORMAT='%Y-%m-%dT%T%z '`|historyにコマンド実行時刻を記録する||
+|`HISTTIMEFORMAT='%Y-%m-%dT%T%z '`|`history`にコマンド実行時刻を記録する||
 
 
 
@@ -41,7 +41,7 @@
 |`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
 |`sed -r 's/[a-z]+f/FFF/g' $file`|`-r` 拡張正規表現||
 |`sed -r '/def$/d' $file`|`'/pattern/d'` マッチする行を削除||
-|`sed -r '/def$/!d' $file`|`'/pattern/!d'` マッチする行以外を削除|grepとして使える！|
+|`sed -r '/def$/!d' $file`|`'/pattern/!d'` マッチする行以外を削除|`grep`として使える！|
 
 
 
