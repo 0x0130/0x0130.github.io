@@ -1,3 +1,9 @@
+
+javascript:(function(){/* style */var style = (function () {/*.toc{border: 1px solid #aaa;padding: 4px 12px;margin-bottom: 12px;position: relative;padding-top: 30px;}.toc-title{display: inline-block;width: auto;background-color: #ccc;position: absolute;left: 0px;top: 0px;font-size: 8pt;padding: 2px 4px;padding-right: 8px;color: #666;}.toc-h{font-size: 11pt;}.toc-h1{}.toc-h2{margin-left: 20px;}.toc-h3{margin-left: 40px;}*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];$('.toc-style').remove();$('body').append($('<style class="toc-style">\n' + style + '\n</style>'));/* toc frame */$('.toc').remove();var $toc = $('<div class="toc"><div class="toc-title">TOC</div></div>');$toc.prependTo($('.markdown-body'));/* each links */$('.markdown-body h1, .markdown-body h2, .markdown-body h3').each(function(){/* level */var tagName = $(this).prop('tagName').toLowerCase();/* link div */var $div = $('<div class="toc-h toc-' + tagName + '"></div>');/* link */var $a = $('<a href=""></a>');$a.appendTo($div);$a.text($(this).text());$a.attr('href', $(this).find('a:first').attr('href'));/* append */$toc.append($div);});})();
+
+
+
+
 # 備忘録
 
 ## Apache2.2.x on systemctl (httpd.service)
